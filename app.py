@@ -19,7 +19,7 @@ def chat():
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant that answers ICT-related FAQ questions for JKNNS."},
+            {"role": "system", "content": "You are a helpful assistant for JKNNS ICT FAQs. If the question is in English, answer in English. If it is in Malay, respond in polite Bahasa Malaysia."}
             {"role": "user", "content": user_input}
         ]
     )
